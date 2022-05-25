@@ -10,7 +10,22 @@ namespace MandelbrotSet
             InitializeComponent();
         }
         
-        private void GenerateMandelbrotSet(object sender, RoutedEventArgs e)
+        private void GenerateCPU(object sender, RoutedEventArgs e)
+        {
+            GenerateMandelbrotSet();
+        }
+
+        private void GenerateMPI(object sender, RoutedEventArgs e)
+        {
+            GenerateMandelbrotSet();
+        }
+
+        private void GenerateOpenMP(object sender, RoutedEventArgs e)
+        {
+            GenerateMandelbrotSet();
+        }
+        
+        private void GenerateMandelbrotSet()
         {
             var mandelbrotSetFrame = new MandelbrotSetFrame(ReadInput());
             MandelbrotSetFrameResult result = mandelbrotSetFrame.Evaluate();
@@ -28,6 +43,14 @@ namespace MandelbrotSet
                 Zoom = float.Parse(Zoom.Text),
                 Iterations = int.Parse(Iterations.Text)
             };
+        }
+        
+        private void SetExample(object sender, RoutedEventArgs e)
+        {
+            X.Text = "0,3581";
+            Y.Text = "-0,672";
+            Zoom.Text = "10000";
+            Iterations.Text = "2000";
         }
     }
 }

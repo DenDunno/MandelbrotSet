@@ -4,22 +4,56 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="MandelbrotSet" Height="600" Width="800">
      
      <Grid>
          <Image Name = "Image" Width="800" Height="400" VerticalAlignment="Top" HorizontalAlignment="Center">
          </Image>
          
          <Button 
+             HorizontalAlignment= "Center"
+             VerticalAlignment = "Bottom" 
+             Height="50" 
+             Width="150" 
+             Margin="-605,0, 0,80"
+             FontSize="20"
+             Click = "SetExample">
+             Set example
+         </Button>
+         
+         <Button 
             HorizontalAlignment= "Center"
             VerticalAlignment = "Bottom" 
             Height="50" 
             Width="150" 
-            Margin="0,0, 0,80"
+            Margin="-205,0, 0,80"
             FontSize="20"
-            Click = "GenerateMandelbrotSet">
-            Generate
+            Click = "GenerateCPU">
+             CPU
+         </Button>
+         
+         <Button 
+            HorizontalAlignment= "Center"
+            VerticalAlignment = "Bottom" 
+            Height="50" 
+            Width="150" 
+            Margin="215,0, 0,80"
+            FontSize="20"
+            Click = "GenerateMPI">
+             MPI
+         </Button>
+         
+         <Button 
+            HorizontalAlignment= "Center"
+            VerticalAlignment = "Bottom" 
+            Height="50" 
+            Width="150" 
+            Margin="595,0, 0,80"
+            FontSize="20"
+            Click = "GenerateOpenMP">OpenMP
         </Button>
+         
+         
         
         <TextBlock
             HorizontalAlignment= "Left"
@@ -27,7 +61,7 @@
             Height="30"
             Width="50"
             FontSize="20"
-            Margin="30,0, 0,30">X = </TextBlock>
+            Margin="40,0, 0,30">X = </TextBlock>
         
         <TextBox 
             Name="X"
@@ -36,7 +70,7 @@
             Height="30"
             Width="50"
             FontSize="20"
-            Margin="70,0, 0,30">0</TextBox>
+            Margin="80,0, 0,30">0</TextBox>
         
         <TextBlock
             HorizontalAlignment= "Left"
@@ -44,7 +78,7 @@
             Height="30"
             Width="50"
             FontSize="20"
-            Margin="150,0, 0,30">Y = </TextBlock>
+            Margin="160,0, 0,30">Y = </TextBlock>
         
         <TextBox 
             Name="Y"
@@ -53,7 +87,7 @@
             Height="30"
             Width="50"
             FontSize="20"
-            Margin="190,0, 0,30">0</TextBox>
+            Margin="200,0, 0,30">0</TextBox>
         
         <TextBlock
             HorizontalAlignment= "Left"
@@ -61,7 +95,7 @@
             Height="30"
             Width="80"
             FontSize="20"
-            Margin="270,0, 0,30">Zoom = </TextBlock>
+            Margin="280,0, 0,30">Zoom = </TextBlock>
         
         <TextBox 
             Name="Zoom"
@@ -70,7 +104,7 @@
             Height="30"
             Width="50"
             FontSize="20"
-            Margin="350,0, 0,30">1</TextBox>
+            Margin="360,0, 0,30">1</TextBox>
         
         <TextBlock
             HorizontalAlignment= "Left"
@@ -78,7 +112,7 @@
             Height="30"
             Width="100"
             FontSize="20"
-            Margin="430,0, 0,30">Iterations = 100</TextBlock>
+            Margin="440,0, 0,30">Iterations = 100</TextBlock>
         
         <TextBox 
             Name="Iterations"
@@ -87,7 +121,7 @@
             Height="30"
             Width="60"
             FontSize="20"
-            Margin="540,0, 0,30">200</TextBox>
+            Margin="550,0, 0,30">200</TextBox>
         
         <TextBlock
             HorizontalAlignment= "Left"
@@ -95,7 +129,7 @@
             Height="30"
             Width="80"
             FontSize="20"
-            Margin="610,0, 0,30">Time = </TextBlock>
+            Margin="620,0, 0,30">Time = </TextBlock>
         
         <TextBlock 
             Name="Time"
@@ -104,6 +138,6 @@
             Height="30"
             Width="80"
             FontSize="20"
-            Margin="680,0, 0,30">200</TextBlock>
+            Margin="690,0, 0,30">200</TextBlock>
     </Grid>
 </Window>
