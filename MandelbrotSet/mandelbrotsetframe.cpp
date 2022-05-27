@@ -1,8 +1,8 @@
 #include "mandelbrotsetframe.h"
 #include <qimage.h>
 #include <complex>
+#include <omp.h>
 
-void run(QImage* image);
 int evaluateIterationsForPoint(double x, double y, int maxIterations);
 
 MandelbrotSetFrame::MandelbrotSetFrame(const MandelbrotSetFrameData &data)
@@ -11,58 +11,31 @@ MandelbrotSetFrame::MandelbrotSetFrame(const MandelbrotSetFrameData &data)
 }
 
 
-MandelbrotSetFrameResult MandelbrotSetFrame::evaluate()
+MandelbrotSetFrameResult MandelbrotSetFrame::evaluate(EvaluationMethod evaluationMethod)
 {
-    const clock_t start = clock();
-    run(&frame_);
+    const clock_t start = clock();    
+
     const double elapsed_time = double( clock () - start ) /  CLOCKS_PER_SEC;
 
     return MandelbrotSetFrameResult(frame_, elapsed_time);
 }
 
 
-void MandelbrotSetFrame::run(QImage* image)
+void MandelbrotSetFrame::run_CPU()
 {
-    for (int i = 0; i < image->height(); ++i)
-        for (int j = 0; j < image->width(); ++j)
-            image->setPixelColor(j, i, evaluateColorForPoint(j, i));
+    for (int i = 0; i < frame_.height(); ++i)
+        for (int j = 0; j < frame_.width(); ++j)
+            frame_.setPixelColor(j, i, evaluateColorForPoint(j, i));
 }
 
-QColor MandelbrotSetFrame::evaluateColorForPoint(int x, int y)
+
+void MandelbrotSetFrame::run_OPENMP()
 {
-    QColor result = QColor::fromRgb(0, 0, 0);
-
-    double width = width_ / data_.zoom();
-    double height = height_ / data_.zoom();
-
-    double xStart = xStart_ + (width_ - width) / 2;
-    double yStart = yStart_ + (height_ - height) / 2;
-
-    double newX = xStart + (double)x / data_.width() * width + data_.location().x();
-    double newY = yStart + (double)y / data_.height() * height + data_.location().y();
-
-    int iterationsForPoint = evaluateIterationsForPoint(newX, newY, data_.iterations());
-
-    if (iterationsForPoint != data_.iterations())
-        result = colors_[iterationsForPoint % 16];
-
-    return result;
+    #pragma omp parallel for
+    for (int i = 0; i < frame_.height(); ++i)
+        for (int j = 0; j < frame_.width(); ++j)
+            frame_.setPixelColor(j, i, evaluateColorForPoint(j, i));
 }
 
-int evaluateIterationsForPoint(double x, double y, int maxIterations)
-{
-    int iterations = 0;
-    std::complex<double> z = 0;
 
-    for (int i = 0; i < maxIterations; i++)
-    {
-        z = z * z +  std::complex<double>(x, y);
 
-        if (std::abs(z) > 2)
-            break;
-
-        ++iterations;
-    }
-
-    return iterations;
-}

@@ -1,21 +1,20 @@
 #ifndef MANDELBROTSETFRAMERESULT_H
 #define MANDELBROTSETFRAMERESULT_H
-
 #include <qimage.h>
 
 
-struct MandelbrotSetFrameResult
+class MandelbrotSetFrameResult
 {
 public:
     MandelbrotSetFrameResult(QImage& image, double time) : image_(image), time_(time)
     {}
 
-    QImage& image() { return image_; }
-    double& time() { return time_; }
+    const QImage& image() { return image_; }
+    const double& time() { return time_; }
 
 private:
-    QImage& image_;
-    double time_;
+    const QImage& image_;
+    const double time_;
 };
 
 #endif

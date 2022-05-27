@@ -1,8 +1,9 @@
 #include "mainwindow.h"
-#include "mandelbrotsetframe.h"
+#include "cpualgorithm.h"
 #include "ui_mainwindow.h"
+#include "openmpalgorithm.h"
 
-void GenerateMandelbrotSetFrame(Ui::MainWindow* ui);
+void GenerateMandelbrotSetFrame(MandelbrotSetFrameAlgorithm& algorithm, Ui::MainWindow* ui);
 MandelbrotSetFrameData readInput(Ui::MainWindow* ui);
 
 MainWindow::MainWindow(QWidget *parent)
@@ -21,49 +22,46 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_CPUButton_clicked()
 {
-    GenerateMandelbrotSetFrame(ui);
+    CPUAlgorithm algorithm = CPUAlgorithm(readInput(ui));
+    GenerateMandelbrotSetFrame(algorithm , ui);
 }
 
 
 void MainWindow::on_MPIButton_clicked()
 {
-    GenerateMandelbrotSetFrame(ui);
 }
 
 
 void MainWindow::on_OpenMPButton_clicked()
 {
-    GenerateMandelbrotSetFrame(ui);
+    OpenMPAlgorithm algorithm = OpenMPAlgorithm(readInput(ui));
+    GenerateMandelbrotSetFrame(algorithm , ui);
 }
 
 
 void MainWindow::on_ExampleButton_clicked()
 {
-    ui->X->setText("0.009");
-    ui->Y->setText("0.199");
-    ui->Zoom->setText("300");
-    ui->Iterations->setText("2000");
+    ui->X->setText("0.00135");
+    ui->Y->setText("0.00001");
+    ui->Zoom->setText("30000");
+    ui->Iterations->setText("30000");
 }
 
 
-void GenerateMandelbrotSetFrame(Ui::MainWindow* ui)
+void GenerateMandelbrotSetFrame(MandelbrotSetFrameAlgorithm& algorithm, Ui::MainWindow* ui)
 {
-    MandelbrotSetFrame frame = MandelbrotSetFrame(readInput(ui));
-    MandelbrotSetFrameResult result = frame.evaluate();
+    const clock_t begin_time = clock();
+    const QImage& frame = algorithm.evaluate();
+    const float elapsed_time = float(clock() - begin_time) / CLOCKS_PER_SEC;
 
-    QPixmap pixmap = QPixmap::fromImage(result.image());
-    QString time = QString::number(result.time());
-
-    ui->Image->setPixmap(pixmap);
-    ui->Time->setText(time);
+    ui->Image->setPixmap(QPixmap::fromImage(frame));
+    ui->Time->setText(QString::number(elapsed_time));
 }
 
 
 MandelbrotSetFrameData readInput(Ui::MainWindow* ui)
 {
     QPoint size = QPoint(ui->Image->width(), ui->Image->height());
-    QString strin = ui->Y->text();
-
     double x = ui->X->text().toDouble();
     double y = -(ui->Y->text().toDouble());
     double zoom = ui->Zoom->text().toInt();
