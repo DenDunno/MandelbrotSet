@@ -10,9 +10,9 @@ int main()
     MandelbrotSetFrameAlgorithm* algorithm = new OpenMPAlgorithm(data);
     PixelMatrix pixelMatrix = algorithm->evaluate();    
     Bitmap bitmap = Bitmap(pixelMatrix);
-    bitmap.save("D:/MandelbrotSet/mandelbrotSetFrame.bmp");   
+    bitmap.save("D:/Business/MandelbrotSet/mandelbrotSetFrame.bmp");
 
-    system ("D:/MandelbrotSet/mandelbrotSetFrame.bmp");
+    system("D:/Business/MandelbrotSet/mandelbrotSetFrame.bmp");
 
     return 0;
 }
