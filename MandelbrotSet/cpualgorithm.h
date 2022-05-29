@@ -8,7 +8,7 @@ class CPUAlgorithm : public MandelbrotSetFrameAlgorithm
 public:
 
     CPUAlgorithm(const MandelbrotSetFrameData& data) : MandelbrotSetFrameAlgorithm(data) {}
-    const QImage& evaluate() override;
+    const PixelMatrix& evaluate() override;
 };
 
 #endif

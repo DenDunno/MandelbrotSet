@@ -1,11 +1,18 @@
-#include "mainwindow.h"
-#include <QApplication>
+#include <omp.h>
+#include "bitmap.h"
+#include "cpualgorithm.h"
+#include "mpialgorithm.h"
+#include "openmpalgorithm.h"
 
-
-int main(int argc, char *argv[])
+int main()
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
+    MandelbrotSetFrameData data = MandelbrotSetFrameData(Point(1920, 1080), Point(0.045, 0.2), 200, 2000);
+    MandelbrotSetFrameAlgorithm* algorithm = new OpenMPAlgorithm(data);
+    PixelMatrix pixelMatrix = algorithm->evaluate();    
+    Bitmap bitmap = Bitmap(pixelMatrix);
+    bitmap.save("D:/MandelbrotSet/mandelbrotSetFrame.bmp");   
+
+    system ("D:/MandelbrotSet/mandelbrotSetFrame.bmp");
+
+    return 0;
 }

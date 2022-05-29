@@ -8,7 +8,7 @@ class OpenMPAlgorithm : public MandelbrotSetFrameAlgorithm
 public:
 
     OpenMPAlgorithm(const MandelbrotSetFrameData& data) : MandelbrotSetFrameAlgorithm(data) {}
-    const QImage& evaluate() override;
+    const PixelMatrix& evaluate() override;
 };
 
 #endif

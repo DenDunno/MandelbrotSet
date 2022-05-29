@@ -1,12 +1,12 @@
 #include "cpualgorithm.h"
 
-const QImage& CPUAlgorithm::evaluate()
+const PixelMatrix& CPUAlgorithm::evaluate()
 {
-    for(int i = 0; i < frame_.width(); ++i)
+    for(int i = 0; i < data_.height(); ++i)
     {
-        for(int j = 0; j < frame_.height(); ++j)
+        for(int j = 0; j < data_.width(); ++j)
         {
-            frame_.setPixelColor(i, j, evaluateColorForPoint(i, j));
+            frame_[i][j] = evaluatePixel(j, i);
         }
     }
 

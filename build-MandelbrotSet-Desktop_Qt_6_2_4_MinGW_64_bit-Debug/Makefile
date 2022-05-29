@@ -70,293 +70,283 @@ release-install: FORCE
 release-uninstall: FORCE
 	$(MAKE) -f $(MAKEFILE).Release uninstall
 
-Makefile: ../MandelbrotSet/MandelbrotSet.pro ../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf ../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_pre.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/device_config.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/sanitize.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/gcc-base.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-base.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows_vulkan_sdk.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-vulkan.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-win32.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-desktop.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/qconfig.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_freetype.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_libpng.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_entrypoint_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldom_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_tools_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_zlib_private.pri \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_functions.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_config.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_post.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/toolchain.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_pre.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/default_pre.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resolve_config.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds_post.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_post.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qml_debug.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/entrypoint.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/precompile_header.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/warn_on.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources_functions.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/moc.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/opengl.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/uic.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qmake_use.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/file_copies.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/testcase_targets.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exceptions.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf \
-		../MandelbrotSet/MandelbrotSet.pro \
-		../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Widgets.prl \
-		../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Gui.prl \
-		../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Core.prl \
-		../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6EntryPoint.prl \
+Makefile: ../MandelbrotSet/MandelbrotSet.pro ../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf ../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_pre.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/device_config.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/sanitize.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/gcc-base.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-base.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows_vulkan_sdk.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-vulkan.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-win32.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-desktop.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/qconfig.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_freetype.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_libpng.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_entrypoint_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldom_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_tools_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_zlib_private.pri \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_functions.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_config.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_post.prf \
 		.qmake.stash \
-		../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/build_pass.prf
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/toolchain.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_pre.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/default_pre.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resolve_config.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds_post.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_post.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/console.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qml_debug.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/entrypoint.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/precompile_header.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/warn_on.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources_functions.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/moc.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qmake_use.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/file_copies.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/testcase_targets.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exceptions.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf \
+		../MandelbrotSet/MandelbrotSet.pro \
+		../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Core.prl \
+		../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\MandelbrotSet\MandelbrotSet.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_pre.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/device_config.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/sanitize.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/gcc-base.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-base.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows_vulkan_sdk.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-vulkan.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-win32.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-desktop.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/qconfig.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_freetype.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_libpng.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_entrypoint_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldom_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_tools_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_zlib_private.pri:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_functions.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_config.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_post.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/toolchain.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_pre.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/default_pre.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resolve_config.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds_post.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_post.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qml_debug.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/entrypoint.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/precompile_header.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/warn_on.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources_functions.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/moc.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/opengl.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/uic.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qmake_use.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/file_copies.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/testcase_targets.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exceptions.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf:
-../MandelbrotSet/MandelbrotSet.pro:
-../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Widgets.prl:
-../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Gui.prl:
-../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Core.prl:
-../../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6EntryPoint.prl:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_pre.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/device_config.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/sanitize.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/gcc-base.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-base.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/windows_vulkan_sdk.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-vulkan.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/g++-win32.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/common/windows-desktop.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/qconfig.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_freetype.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_ext_libpng.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_core_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_dbus_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designer_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_entrypoint_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_gui_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_help_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsanimation_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsfolderlistmodel_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labsqmlmodels_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssettings_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labssharedimage_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_labswavefrontmesh_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_linguist_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_network_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_opengl_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_openglwidgets_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qml_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcompiler_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlcore_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmldom_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmllocalstorage_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_qmlxmllistmodel_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quick_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrols2impl_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickcontrolstestutilsprivate_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2quickimpl_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickdialogs2utils_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicklayouts_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quicktestutilsprivate_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_sql_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svg_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_svgwidgets_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_testlib_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_tools_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uiplugin.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_uitools_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_widgets_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_xml_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/modules/qt_lib_zlib_private.pri:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_functions.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt_config.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/win32-g++/qmake.conf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/spec_post.prf:
 .qmake.stash:
-../../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/build_pass.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/toolchain.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_pre.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/default_pre.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resolve_config.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exclusive_builds_post.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/default_post.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/win32/console.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qml_debug.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/entrypoint.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/precompile_header.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/warn_on.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qt.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources_functions.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/resources.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/moc.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/qmake_use.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/file_copies.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/testcase_targets.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/exceptions.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf:
+../MandelbrotSet/MandelbrotSet.pro:
+../../DevTools/Qt/6.2.4/mingw_64/lib/Qt6Core.prl:
+../../DevTools/Qt/6.2.4/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\MandelbrotSet\MandelbrotSet.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 
