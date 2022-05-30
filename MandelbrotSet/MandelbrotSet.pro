@@ -11,11 +11,11 @@ INCLUDEPATH += "C:\Program Files (x86)\Microsoft SDKs\MPI\Include"
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        algorithms.cpp \
         bitmap.cpp \
         cpualgorithm.cpp \
         main.cpp \
         mandelbrotsetframealgorithm.cpp \
-        mpialgorithm.cpp \
         openmpalgorithm.cpp
 
 # Default rules for deployment.
@@ -39,11 +39,11 @@ INCLUDEPATH += 'C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x86'
 DEPENDPATH += 'C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x86'
 
 HEADERS += \
+    algorithms.h \
     mandelbrotSetFramePiece.h \
     point.h \
     bitmap.h \
     cpualgorithm.h \
     mandelbrotsetframealgorithm.h \
     mandelbrotsetframedata.h \
-    mpialgorithm.h \
     openmpalgorithm.h
