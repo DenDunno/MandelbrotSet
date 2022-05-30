@@ -39,6 +39,7 @@ INCLUDEPATH += 'C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x86'
 DEPENDPATH += 'C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x86'
 
 HEADERS += \
+    mandelbrotSetFramePiece.h \
     point.h \
     bitmap.h \
     cpualgorithm.h \

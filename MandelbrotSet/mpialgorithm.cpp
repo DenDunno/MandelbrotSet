@@ -14,13 +14,5 @@ MPIAlgorithm::~MPIAlgorithm()
 
 const PixelMatrix& MPIAlgorithm::evaluate()
 {
-    int world_size = 3;
-    int world_rank = 0;
-
-    MPI_Comm_size(MPI_COMM_WORLD, &world_size);
-    MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
-
-    std::cout << world_rank << std::endl;
-
     return frame_;
 }

@@ -9,10 +9,10 @@ class MandelbrotSetFrameAlgorithm
 {
 public:
     MandelbrotSetFrameAlgorithm(const MandelbrotSetFrameData& data);
+    Pixel evaluatePixel(const int x, const int y);
     virtual const PixelMatrix& evaluate() = 0;
 
 protected:
-    Pixel evaluatePixel(const int x, const int y);
     PixelMatrix frame_;
     const MandelbrotSetFrameData& data_;
 
